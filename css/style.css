@@ -588,3 +588,78 @@ iframe{
     margin-bottom:20px;
 
 }
+/* =====================
+   スライダー
+===================== */
+
+.slider{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.slides{
+
+    position:relative;
+
+    min-height:280px;
+
+}
+
+.slide{
+
+    display:none;
+
+    text-align:center;
+
+    padding:70px 30px;
+
+}
+
+.slide.active{
+
+    display:block;
+
+    animation:fade .8s;
+
+}
+
+.slide h2{
+
+    font-size:34px;
+
+    color:#25a9ff;
+
+    margin-bottom:20px;
+
+}
+
+.slide p{
+
+    font-size:20px;
+
+    color:#666;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
