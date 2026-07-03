@@ -1,1 +1,331 @@
+/* ==========================
+   こうのゲーム実況！公式サイト
+   style.css Ver1.0
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+
+    color:white;
+
+    background:#0f1117;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===== 幾何学背景 ===== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(135deg,#18c96422 25%,transparent 25%),
+
+    linear-gradient(225deg,#00c8ff22 25%,transparent 25%),
+
+    linear-gradient(315deg,#18c96422 25%,transparent 25%),
+
+    linear-gradient(45deg,#00c8ff22 25%,transparent 25%);
+
+    background-size:220px 220px;
+
+    animation:bgmove 25s linear infinite;
+
+    z-index:-2;
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at center,
+    transparent 0%,
+    #0f1117 75%);
+
+    z-index:-1;
+
+}
+
+@keyframes bgmove{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:220px 220px;
+
+    }
+
+}
+
+
+/* ===== ヘッダー ===== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(15,17,23,.85);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid #18c96455;
+
+    z-index:999;
+
+}
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#18c964;
+
+}
+
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+    color:#00d4ff;
+
+}
+
+
+/* ===== メイン画像 ===== */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 8%;
+
+}
+
+
+.hero h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+.hero p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    color:#d0d0d0;
+
+    line-height:1.8;
+
+}
+
+
+.hero button{
+
+    margin-top:40px;
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+    90deg,
+    #18c964,
+    #00d4ff
+    );
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px #18c96466;
+
+}
+
+
+.hero button:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 40px #00d4ff99;
+
+}
+
+
+/* ===== カード ===== */
+
+.menu{
+
+    width:min(1300px,92%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    padding-bottom:120px;
+
+}
+
+
+.card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+
+.card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+    border-color:#18c964;
+
+    box-shadow:
+    0 0 25px #18c96455;
+
+}
+
+
+.card h2{
+
+    margin-top:18px;
+
+    margin-bottom:12px;
+
+    font-size:28px;
+
+}
+
+
+.card p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+}
+
+
+/* ===== フッター ===== */
+
+footer{
+
+    padding:60px;
+
+    text-align:center;
+
+    border-top:1px solid #18c96444;
+
+    color:#cfcfcf;
+
+}
