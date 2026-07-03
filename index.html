@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>こうのゲーム実況！</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>こうのゲーム実況！</title>
+
+<meta name="description" content="こうのゲーム実況！公式サイト">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
     <div class="logo">
-        🎮 こうのゲーム実況！
+
+        <a href="index.html">
+
+            🎮 こうのゲーム実況！
+
+        </a>
+
     </div>
 
     <nav>
 
-        <nav>
+        <a href="index.html">ホーム</a>
 
-        <a href="#">お知らせ</a>
+        <a href="news.html">お知らせ</a>
 
-        <a href="#">イベント</a>
+        <a href="events.html">イベント</a>
 
-        <a href="#">チャンネル</a>
+        <a href="channels.html">チャンネル</a>
 
-        <a href="#">ライブ</a>
+        <a href="live.html">ライブ</a>
 
-        <a href="#">配信予定</a>
+        <a href="profile.html">プロフィール</a>
 
-        <a href="#">プロフィール</a>
+        <a href="contact.html">お問い合わせ</a>
 
     </nav>
 
@@ -40,16 +57,67 @@
 
 <section class="hero">
 
-    <div class="hero-text">
+    <div class="hero-left">
 
-        <h1>いろんなゲームを全力で楽しもう！</h1>
+        <span class="tag">
+
+            OFFICIAL WEBSITE
+
+        </span>
+
+        <h1>
+
+            君の「楽しい」が<br>
+            ここにある。
+
+        </h1>
 
         <p>
+
             Minecraft・2048・世界のアソビ大全51など、
-            さまざまなゲームを配信しています！
+            いろいろなゲームを全力で楽しむ実況チャンネルです。
+
         </p>
 
-        <button>チャンネルを見る</button>
+        <div class="hero-buttons">
+
+            <a href="channels.html" class="btn-main">
+
+                ▶ チャンネルを見る
+
+            </a>
+
+            <a href="live.html" class="btn-sub">
+
+                🔴 ライブを見る
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-right">
+
+        <div class="hero-card">
+
+            <h2>🎮 配信ゲーム</h2>
+
+            <ul>
+
+                <li>こうクラ（Minecraft）</li>
+
+                <li>2048</li>
+
+                <li>世界のアソビ大全51</li>
+
+                <li>その他ゲーム</li>
+
+            </ul>
+
+        </div>
 
     </div>
 
@@ -57,54 +125,175 @@
 
 
 
-<section class="menu">
+<section class="news">
 
-    <div class="card">
-        📢
-        <h2>お知らせ</h2>
-        <p>最新情報はこちら</p>
-    </div>
+<h2>
 
-    <div class="card">
-        🎉
-        <h2>イベント</h2>
-        <p>イベント情報</p>
-    </div>
+📢 最新のお知らせ
 
-    <div class="card">
-        🎮
-        <h2>チャンネル</h2>
-        <p>ゲーム一覧</p>
-    </div>
+</h2>
 
-    <div class="card">
-        🔴
-        <h2>ライブ配信</h2>
-        <p>現在の配信</p>
-    </div>
+<div class="news-box">
 
-    <div class="card">
-        📅
-        <h2>配信予定</h2>
-        <p>今後の予定</p>
-    </div>
+<div class="news-item">
 
-    <div class="card">
-        👤
-        <h2>プロフィール</h2>
-        <p>自己紹介</p>
+<span>2026.07.03</span>
+
+<p>公式サイト制作開始！</p>
+
+</div>
+
+<div class="news-item">
+
+<span>Coming Soon</span>
+
+<p>2048ページ公開予定</p>
+
+</div>
+
+<div class="news-item">
+
+<span>Coming Soon</span>
+
+<p>イベントページ制作予定</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- チャンネル紹介 -->
+
+<section class="channels">
+
+    <h2>🎮 チャンネル</h2>
+
+    <div class="channel-grid">
+
+        <div class="channel-card">
+
+            <h3>⛏️ こうクラ</h3>
+
+            <p>
+                Minecraftを中心にしたシリーズです。
+                建築・検証・サバイバルなど様々な企画を配信！
+            </p>
+
+            <a href="channels.html">詳しく見る →</a>
+
+        </div>
+
+        <div class="channel-card">
+
+            <h3>🧩 2048</h3>
+
+            <p>
+                世界記録を目指して挑戦！
+                ライブ配信も予定しています。
+            </p>
+
+            <a href="channels.html">詳しく見る →</a>
+
+        </div>
+
+        <div class="channel-card">
+
+            <h3>🎲 世界のアソビ大全51</h3>
+
+            <p>
+                友達との対戦や視聴者参加型企画を予定！
+            </p>
+
+            <a href="channels.html">詳しく見る →</a>
+
+        </div>
+
     </div>
 
 </section>
 
+<!-- イベント -->
 
+<section class="events">
+
+    <h2>🎉 イベント</h2>
+
+    <div class="event-box">
+
+        <h3>近日公開予定</h3>
+
+        <p>
+            イベント情報はここに表示されます。
+        </p>
+
+    </div>
+
+</section>
+
+<!-- 最新動画 -->
+
+<section class="videos">
+
+    <h2>📺 最新動画</h2>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+
+            <h3>最新動画</h3>
+
+            <p>
+                YouTube連携後に自動表示されます。
+            </p>
+
+        </div>
+
+        <div class="video-card">
+
+            <h3>おすすめ動画</h3>
+
+            <p>
+                人気動画を表示予定です。
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- お問い合わせ -->
+
+<section class="contact">
+
+    <h2>📩 お問い合わせ</h2>
+
+    <p>
+
+        ご意見・ご要望などがありましたら、
+        今後設置予定のお問い合わせフォームから
+        お送りください。
+
+    </p>
+
+</section>
 
 <footer>
 
-    <h3>こうのゲーム実況！</h3>
+    <h2>🎮 こうのゲーム実況！</h2>
 
     <p>
-        ©2026 Kou-youtuber
+
+        君の「楽しい」がここにある。
+
+    </p>
+
+    <br>
+
+    <p>
+
+        © 2026 Kou no Game Channel. All Rights Reserved.
+
     </p>
 
 </footer>
@@ -112,4 +301,5 @@
 <script src="js/main.js"></script>
 
 </body>
+
 </html>
