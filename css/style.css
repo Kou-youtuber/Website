@@ -664,3 +664,46 @@ iframe{
    
 
 }
+/* ===== Backボタン ===== */
+
+.back-area{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:30px auto 0;
+
+}
+
+.back-button{
+
+    background:#25a9ff;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(37,169,255,.25);
+
+}
+
+.back-button:hover{
+
+    background:#0d8de6;
+
+    transform:translateY(-3px);
+
+}
