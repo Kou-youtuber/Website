@@ -137,3 +137,24 @@ slides[currentSlide].classList.add("active");
 }
 
 setInterval(changeSlide,4000);
+
+// =========================
+// ハンバーガーメニュー
+// =========================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    if (menuBtn && navMenu) {
+
+        menuBtn.addEventListener("click", function () {
+
+            navMenu.classList.toggle("active");
+
+        });
+
+    }
+
+});
