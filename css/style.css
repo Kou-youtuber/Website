@@ -756,3 +756,60 @@ iframe{
     transform:scale(1.05);
 
 }
+/* ===== ページタイトル ===== */
+
+.page-title{
+
+    background:linear-gradient(135deg,#25a9ff,#66d3ff);
+
+    color:white;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+}
+
+.page-title-inner{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.page-title h1{
+
+    font-size:48px;
+
+    margin:15px 0;
+
+}
+
+.page-title p{
+
+    font-size:18px;
+
+}
+
+.breadcrumb{
+
+    font-size:15px;
+
+    opacity:.9;
+
+}
+
+.breadcrumb a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.breadcrumb span{
+
+    margin:0 8px;
+
+}
